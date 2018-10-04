@@ -12,18 +12,20 @@
         <img class="header__logo-img" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35">
       </a>
       <nav class="header-nav">
-        <button class="header-nav__btn header-nav__btn--burger" type="button">
-        </button>
-        <button class="header-nav__btn header-nav__btn--cross" type="button">
-        </button>
+        <div class="nav-btn">
+          <button class="nav__btn btn-open-menu" type="button">
+          </button>
+          <button class="nav__btn--close-menu" type="button">
+          </button>
+        </div>
         <ul class="header-nav__list nav__list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+            <a class="nav-list__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+            <a class="nav-list__link">
               Вязание на заказ
             </a>
           </li>
@@ -40,11 +42,12 @@
         </ul>
       </nav>
     </header>
+
     <main class="main">
-      <h1 class="main__title">
-        Вязание на заказ
-      </h1>
       <section class="form__wrapper">
+        <h2 class="form__title">
+          Вязание на заказ
+        </h2>
         <p class="form__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
@@ -54,12 +57,12 @@
               <h3 class="form__legend">
                 ТИП
               </h3>
-              <input type="radio" name="interior" id="interior">
-              <label for="interior">
+              <input class="radio__btn" type="radio" name="radion-btn" id="interior">
+              <label class="radio__label" for="interior">
                 Аксессуар для интерьера
               </label>
-              <input type="radio" name="toy"  id="toy">
-              <label for="toy">
+              <input class="radio__btn" type="radio" name="radion-btn"  id="toy">
+              <label class="radio__label" for="toy">
                 Детская игрушка
               </label>
             </li>
@@ -67,28 +70,28 @@
               <h3 class="form__legend">
                 ЦВЕТ
               </h3>
-              <input type="checkbox" name="white" id="white">
-              <label for="white">
+              <input class="checkbox__value" type="checkbox" name="white" id="white">
+              <label class="checkbox__label" for="white">
                 Белый
               </label>
-              <input type="checkbox" name="grey" id="grey">
-              <label for="grey">
+              <input class="checkbox__value" type="checkbox" name="grey" id="grey">
+              <label class="checkbox__label" for="grey">
                 Серый
               </label>
-              <input type="checkbox" name="tiffani" id="tiffani">
-              <label for="tiffani">
+              <input class="checkbox__value" type="checkbox" name="tiffani" id="tiffani">
+              <label class="checkbox__label" for="tiffani">
                 &#171;Тифанни&#187;
               </label>
-              <input type="checkbox" name="black" id="black">
-              <label for="black">
+              <input class="checkbox__value" type="checkbox" name="black" id="black">
+              <label class="checkbox__label" for="black">
                 Чёрный
               </label>
-              <input type="checkbox" name="pink" id="pink">
-              <label for="pink">
+              <input class="checkbox__value" type="checkbox" name="pink" id="pink">
+              <label class="checkbox__label" for="pink">
                 Розовый
               </label>
-              <input type="checkbox" name="orange" id="orange">
-              <label for="orange">
+              <input class="checkbox__value" type="checkbox" name="orange" id="orange">
+              <label class="checkbox__label" for="orange">
                 Оранжевый
               </label>
             </li>
@@ -96,36 +99,36 @@
               <h3 class="form__legend">
                 ФИО
               </h3>
-              <label for="name">
+              <label class="label__text" for="name">
                 Имя
               </label>
-              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-              <label for="lastname">
+              <input class="inp__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+              <label class="label__text" for="lastname">
                 Фамилия
               </label>
               <input type="text" name="lastname" id="lastname" placeholder="Введите вашу фамилию*" required>
-              <label for="patronic">
+              <label class="label__text" for="patronic">
                 Отчествао
               </label>
-              <input type="text" name="patronic" id="patronic" placeholder="Введите ваше отчество*" required>
+              <input class="inp__text" type="text" name="patronic" id="patronic" placeholder="Введите ваше отчество*" required>
             </li>
             <li class="form__item">
               <h3 class="form__legend">
                 ТЕЛ
               </h3>
-              <input type="tel" name="phone" pattern="[/+]{1}[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XXX XX XX*" required>
+              <input class="inp__text" type="tel" name="phone" pattern="[/+]{1}[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XXX XX XX*" required>
             </li>
             <li class="form__item">
               <h3 class="form__legend">
                 E-MAIL
               </h3>
-              <input type="email" name="email" placeholder="Ваш Email*" required>
+              <input class="inp__email" type="email" name="email" placeholder="Ваш Email*" required>
             </li>
             <li class="form__item">
               <h3 class="form__legend">
                 ДОП
               </h3>
-              <textarea name="name" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу">
+              <textarea class="textarea" name="name" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу">
               </textarea>
             </li>
           </ul>
@@ -139,18 +142,15 @@
     <footer class="footer">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social-link--in" href="#">
-            Instagram
+          <a class="social__link social-link--in" href="https://www.instagram.com/htmlacademy">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social-link--fb" href="#">
-            Facebook
+          <a class="social__link social-link--fb" href="https://www.facebook.com/htmlacademy">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social-link--tw" href="#">
-            Twitter
+          <a class="social__link social-link--tw" href="https://www.instagram.com/htmlacademy">
           </a>
         </li>
       </ul>

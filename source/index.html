@@ -8,23 +8,26 @@
   </head>
   <body>
     <div class="wrapper">
+
       <header class="header">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="index.html">
           <img class="header__logo-img" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35">
         </a>
         <nav class="header-nav">
-        <button class="header-nav__btn header-nav__btn--burger" type="button">
-        </button>
-        <button class="header-nav__btn header-nav__btn--cross" type="button">
-        </button>
+          <div class="nav-btn">
+            <button class="nav__btn btn-open-menu" type="button">
+            </button>
+            <button class="nav__btn--close-menu" type="button">
+            </button>
+          </div>
           <ul class="header-nav__list nav__list">
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">
+              <a class="nav-list__link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">
+              <a class="nav-list__link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
@@ -41,16 +44,16 @@
           </ul>
         </nav>
       </header>
+
       <main class="main">
-        <h1 class="main__title">
-          Милые штучки ручной работы для дома
-        </h1>
         <section class="products">
-          <img src="http://placehold.it/320x360" alt="photo">
-          <a href="#" class="products__link producvts__link-interior">
+          <h2 class="products__title">
+            Милые штучки ручной работы для дома
+          </h2>
+          <a class="products__interior" href="#" >
             Предметы интерьера
           </a>
-          <a href="#" class="products__link products__link-toys">
+          <a class="products__toys" href="#" >
             Детские игрушки
           </a>
         </section>
@@ -58,99 +61,107 @@
           <h2 class="product-week__title">
             Вязанные корзинки
           </h2>
-          <h3 class="product-week__item-of-work">
+          <p class="product-week__item-of-work">
             ТОВАР НЕДЕЛИ
-          </h3>
+          </p>
           <p class="product-week__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <div class="product-week__features">
-            <ul class="product-item__features-list">
-              <li class="product-item__features-items">
-                <span>
-                  Цвет:
-                </span>
-                &#171;Тифанни&#187;/серый
-              </li>
-              <li class="product-item__features-items">
-                <span>
-                  Диаметр:
-                </span>
+          <table class="product-week__features">
+            <tr>
+              <td class="product-week__color">
+                Цвет:
+              </td>
+              <td class="product-week__value">
+                &#171;Тиффани&#187;/серый
+              </td>
+            </tr>
+            <tr>
+              <td class="product-week__diametr">
+                Диаметр:
+              </td>
+              <td class="product-week__value">
                 25 см
-              </li>
-              <li class="product-item__features-items">
-                <span>
-                  Высота:
-                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="product-week__height">
+                Высота:
+              </td>
+              <td class="product-week__value">
                 15 см
-              </li>
-            </ul>
+              </td>
+            </tr>
+          </table>
+          <div class="product-week__img">
+            <img src="http://placehold.it/260x316" alt="product-week">
           </div>
-          <img class="product-week__img" src="http://placehold.it/260x316" alt="product-week">
           <p class="product-week__price">
             Цена: 990 руб.
           </p>
-          <button class="product-week__order product-week__order--btn" type="button">
+          <button class="product-week__order" type="button">
             ЗАКАЗАТЬ
           </button>
         </section>
         <section class="about-us">
           <h2 class="about-us__title">
-            Коротко о нас
+            Коротко о нас:
           </h2>
           <ul class="about-us__list">
-            <li class="about-us_item">
-              <a class="about-us__link about-us__link--nature"  href="#">
+            <li class="about-us__item">
+              <p class="about-us__description">
                 Экологически чистые материалы
-              </a>
+              </p>
             </li>
-            <li class="about-us_item">
-              <a class="about-us__link about-us__link--money" href="#">
+            <li class="about-us__item">
+              <p class="about-us__description">
                 Скандинавский стиль по российской цене
-              </a>
+              </p>
             </li>
-            <li class="about-us_item">
-              <a class="about-us__link about-us__link--heart" href="#">
+            <li class="about-us__item">
+              <p class="about-us__description">
                 Увеличивает лайки на фотографиях
-              </a>
+              </p>
             </li>
-              <li class="about-us_item">
-              <a class="about-us__link about-us__link--wool" href="#">
+              <li class="about-us__item">
+              <p class="about-us__description">
                 Связано вручную с любовь и умилением
-              </a>
+              </p>
             </li>
-            <li class="about-us_item">
-              <a class="about-us__link about-us__link--roket" href="#">
+            <li class="about-us__item">
+              <p class="about-us__description">
                 Поддержка отечественного производителя
-              </a>
+              </p>
             </li>
-            <li class="about-us_item">
-              <a class="about-us__link about-us__link--gift" href="#">
+            <li class="about-us__item">
+              <p class="about-us__description">
                 Постовляеться в подарочной упаковке
-              </a>
+              </p>
             </li>
           </ul>
         </section>
-        <section class="rewies">
-          <h2 class="rewies__title">
+        <section class="revies">
+          <h2 class="reviews__title">
             Отзывы
           </h2>
-          <article class="rewies__wrapper">
-            <p class="rewies__description">
+          <article class="reviews__wrapper">
+            <blockquote class="reviews__description">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="rewies__user-name">
+            </blockquote>
+            <cite class="reviews__user-name">
               Анастасия Красильникова
-            </p>
-            <p class="rewies__user-e-mail">
+            </cite>
+            <a class="reviwes__user-e-mail" href="mailto:@misssssiskras">
               @misssssiskras
-            </p>
+            </a>
           </article>
-          <a class="rewies__arrow rewies__arrow--right" href="#">
-          </a>
-          <a class="rewies__arrow rewies__arrow--left" href="#">
-          </a>
-          <a class="rewies__write" href="#">
+          <div class="reviews__nav">
+            <a class="reviews__arrow rewies__arrow--right" href="#" alt="newt review">
+            </a>
+            <a class="reviews__arrow rewies__arrow--left" href="#" alt="previous review">
+            </a>
+          </div>
+          <a class="reviews__btn" href="#" >
             Написать
           </a>
         </section>
@@ -160,41 +171,40 @@
           </h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <span>
+              <span class="contacts__data">
                 e-mail:
               </span>
-              <a class="email__link" href="info@mimimishkashop.ru">
+              <a class="email__link" href="mailto:info@mimimishkashop.ru">
                 info@mimimishkashop.ru
               </a>
             </li>
-            <li class="contacts__list">
-              <span>
+            <li class="contacts__item">
+              <span class="contacts__data">
                 адрес:
               </span>
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              <p class="contacts__description">
+                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              </p>
             </li>
           </ul>
           <div class="contacts__google-map"></div>
-          <button class="contacts__write-us contacts__write-us--btn" type="button">
+          <a class="contacts__btn" href="form.html">
             Напишите нам
-          </button>
+          </a>
         </section>
       </main>
       <footer class="footer">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social-link--in" href="#">
-              Instagram
+            <a class="social__link social-link--in" href="https://www.instagram.com/htmlacademy">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-link--fb" href="#">
-              Facebook
+            <a class="social__link social-link--fb" href="https://www.facebook.com/htmlacademy">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-link--tw" href="#">
-              Twitter
+            <a class="social__link social-link--tw" href="https://www.instagram.com/htmlacademy">
             </a>
           </li>
         </ul>
@@ -214,21 +224,23 @@
         <p class="modal__description">
           Выберите размер:
         </p>
-        <input type="radio" name="s" value="s" id="s">
-        <label for="s">
-          S
-        </label>
-        <input type="radio" name="m" value="m" id="m">
-        <label for="m">
-          M
-        </label>
-        <input type="radio" name="l" value="l" id="l">
-        <label for="l">
-          L
-        </label>
-        <button type="button" name="button">
-          Добавить
-        </button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="visually-hidden__inp" type="radio" name="radio-btn" value="s" id="s">
+          <label class="visually-visible__inp" for="s">
+            S
+          </label>
+          <input class="visually-hidden__inp" type="radio" name="radio-btn" value="m" id="m">
+          <label class="visually-visible__inp" for="m">
+            M
+          </label>
+          <input class="visually-hidden__inp" type="radio" name="radio-btn" value="l" id="l">
+          <label class="visually-visible__inp" for="l">
+            L
+          </label>
+          <button class="modal__btn" type="submit" name="button">
+            Добавить
+          </button>
+        </form>
       </section>
     </div>
   </body>
