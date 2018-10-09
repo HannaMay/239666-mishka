@@ -10,16 +10,15 @@
     <div class="wrapper">
 
       <header class="header">
-        <a class="header__logo" href="index.html">
+        <a class="header__logo">
           <img class="header__logo-img" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35">
         </a>
         <nav class="header-nav">
-          <div class="nav-btn">
-            <button class="nav__btn btn-open-menu" type="button">
-            </button>
-            <button class="nav__btn--close-menu" type="button">
-            </button>
-          </div>
+          <button class="nav__btn btn-open-menu" type="button">
+            <span class="visually-hidden">
+              Закзыть/Открыть меню
+            </span>
+          </button>
           <ul class="header-nav__list nav__list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="catalog.html">
@@ -50,10 +49,10 @@
           <h2 class="products__title">
             Милые штучки ручной работы для дома
           </h2>
-          <a class="products__interior" href="#" >
+          <a class="products__item" href="#" >
             Предметы интерьера
           </a>
-          <a class="products__toys" href="#" >
+          <a class="products__item" href="#" >
             Детские игрушки
           </a>
         </section>
@@ -69,7 +68,7 @@
           </p>
           <table class="product-week__features">
             <tr>
-              <td class="product-week__color">
+              <td class="product-week__indicators">
                 Цвет:
               </td>
               <td class="product-week__value">
@@ -77,7 +76,7 @@
               </td>
             </tr>
             <tr>
-              <td class="product-week__diametr">
+              <td class="product-week__indicators">
                 Диаметр:
               </td>
               <td class="product-week__value">
@@ -85,7 +84,7 @@
               </td>
             </tr>
             <tr>
-              <td class="product-week__height">
+              <td class="product-week__indicators">
                 Высота:
               </td>
               <td class="product-week__value">
@@ -147,18 +146,24 @@
           <article class="reviews__wrapper">
             <blockquote class="reviews__description">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              <cite class="reviews__user-name">
+                Анастасия Красильникова
+              </cite>
+              <a class="reviwes__user-e-mail" href="mailto:@misssssiskras">
+                @misssssiskras
+              </a>
             </blockquote>
-            <cite class="reviews__user-name">
-              Анастасия Красильникова
-            </cite>
-            <a class="reviwes__user-e-mail" href="mailto:@misssssiskras">
-              @misssssiskras
-            </a>
           </article>
           <div class="reviews__nav">
-            <a class="reviews__arrow rewies__arrow--right" href="#" alt="newt review">
+            <a class="reviews__arrow rewies__arrow--right" href="#">
+              <span class="visual-hidden">
+                Next review
+              </span>
             </a>
-            <a class="reviews__arrow rewies__arrow--left" href="#" alt="previous review">
+            <a class="reviews__arrow rewies__arrow--left" href="#">
+              <span class="visually-hidden">
+                Previous review
+              </span>
             </a>
           </div>
           <a class="reviews__btn" href="#" >
@@ -171,15 +176,17 @@
           </h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <span class="contacts__data">
+              <span class="contacts__name">
                 e-mail:
               </span>
-              <a class="email__link" href="mailto:info@mimimishkashop.ru">
-                info@mimimishkashop.ru
-              </a>
+              <p class="contacts__description">
+                <a href="mailto:info@mimimishkashop.ru">
+                  info@mimimishkashop.ru
+                </a>
+              </p>
             </li>
             <li class="contacts__item">
-              <span class="contacts__data">
+              <span class="contacts__name">
                 адрес:
               </span>
               <p class="contacts__description">
@@ -188,23 +195,24 @@
             </li>
           </ul>
           <div class="contacts__google-map"></div>
-          <a class="contacts__btn" href="form.html">
+          <a class="contacts__btn" href="#">
             Напишите нам
           </a>
         </section>
       </main>
+
       <footer class="footer">
-        <ul class="social__list">
+        <ul class="social">
           <li class="social__item">
-            <a class="social__link social-link--in" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-link--fb" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-link--tw" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
             </a>
           </li>
         </ul>
@@ -217,31 +225,35 @@
           </a>
         </div>
       </footer>
+
       <section class="modal">
-        <h2 class="modal__title">
-          Добавить в корзину
-        </h2>
-        <p class="modal__description">
-          Выберите размер:
-        </p>
-        <form class="modal__form" action="/echo" method="post">
-          <input class="visually-hidden__inp" type="radio" name="radio-btn" value="s" id="s">
-          <label class="visually-visible__inp" for="s">
-            S
-          </label>
-          <input class="visually-hidden__inp" type="radio" name="radio-btn" value="m" id="m">
-          <label class="visually-visible__inp" for="m">
-            M
-          </label>
-          <input class="visually-hidden__inp" type="radio" name="radio-btn" value="l" id="l">
-          <label class="visually-visible__inp" for="l">
-            L
-          </label>
-          <button class="modal__btn" type="submit" name="button">
-            Добавить
-          </button>
-        </form>
+        <div class="madal__wrapper">
+          <h2 class="modal__title">
+            Добавить в корзину
+          </h2>
+          <p class="modal__description">
+            Выберите размер:
+          </p>
+          <form class="form-size" action="/echo" method="post">
+            <input class="form-size__inp visually-hidden" type="radio" name="radio-btn" value="s" id="s">
+            <label class="form-size__label" for="s">
+              S
+            </label>
+            <input class="form-size__inp visually-hidden" type="radio" name="radio-btn" value="m" id="m">
+            <label class="form-size__label" for="m">
+              M
+            </label>
+            <input class="form-size__inp visually-hidden" type="radio" name="radio-btn" value="l" id="l">
+            <label class="form-size__label" for="l">
+              L
+            </label>
+            <button class="modal__btn" type="submit" name="button">
+              Добавить
+            </button>
+          </form>
+        </div>
       </section>
+
     </div>
   </body>
 </html>
