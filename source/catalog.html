@@ -5,6 +5,7 @@
     <title>
       HTML Academy: Мишка
     </title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -14,29 +15,29 @@
           <img class="header__logo-img" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35">
         </a>
         <nav class="header-nav">
-          <button class="nav__btn btn-open-menu" type="button">
+          <button class="header-nav__btn btn-open-menu" type="button">
             <span class="visually-hidden">
               Закзыть/Открыть меню
             </span>
           </button>
           <ul class="header-nav__list nav__list">
-            <li class="nav-list__item">
-              <a class="nav-list__link">
+            <li class="header-nav__item">
+              <a class="header-nav__link">
                 Каталог товаров
               </a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="form.html">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">
                 Поиск по сайту
               </a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">
                 Корзина: пока пуста
               </a>
             </li>
@@ -46,7 +47,7 @@
 
       <main class="main">
         <section class="catalog">
-          <h2 class="catalog-main__title">
+          <h2 class="catalog__title">
             Каталог товаров
           </h2>
           <ul class="catalog__list">
@@ -55,7 +56,7 @@
                 <img src="http://placehold.it/260x195" alt="item hear" width="260" height="195">
               </a>
               <div class="catalog__wrapper">
-                <h3 class="catalog___title">
+                <h3 class="catalog___subtitle">
                   <a class="catalog__link" href="#">
                     Зайчик-попрыгайчик
                   </a>
@@ -80,7 +81,7 @@
                 <img src="http://placehold.it/260x195" alt="item hear" width="260" height="195">
               </a>
               <div class="catalog__wrapper">
-                <h3 class="catalog___title">
+                <h3 class="catalog___subtitle">
                   <a class="catalog__link" href="#">
                     Корзинка для белья
                   </a>
@@ -105,7 +106,7 @@
                 <img src="http://placehold.it/260x195" alt="item hear" width="260" height="195">
               </a>
               <div class="catalog__wrapper">
-                <h3 class="catalog___title">
+                <h3 class="catalog___subtitle">
                   <a class="catalog__link" href="#">
                     Большая корзинка для игрушек
                   </a>
@@ -128,7 +129,7 @@
           </ul>
         </section>
         <section class="video">
-          <h3 class="video___title">
+          <h3 class="video___subtitle">
             Процесс производства
           </h3>
           <div class="video__img">
@@ -192,7 +193,7 @@
             <label class="form-size__label" for="l">
               L
             </label>
-            <button class="modal__btn" type="submit" name="button">
+            <button class="form-size__btn" type="submit" name="button">
               Добавить
             </button>
           </form>
