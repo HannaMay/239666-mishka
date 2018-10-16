@@ -10,6 +10,16 @@
        url("../fonts/opensansbold.woff2");
 }
 
+*,
+*::after,
+*::before {
+box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body{
   margin: 0 auto;
   padding: 0;
@@ -35,6 +45,7 @@ a:visited {
 img{
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .wrapper{

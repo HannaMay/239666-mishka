@@ -53,7 +53,7 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__img" href="#">
-                <img src="http://placehold.it/260x195" alt="item hear" width="260" height="195">
+                <img src="img/photo-hare-mobile@1x.jpg" alt="item hear" width="260" height="195">
               </a>
               <div class="catalog__wrapper">
                 <h3 class="catalog___subtitle">
@@ -78,7 +78,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__img" href="#">
-                <img src="http://placehold.it/260x195" alt="item hear" width="260" height="195">
+                <img src="img/photo-bowl-mobile@1x.jpg" alt="item hear" width="260" height="195">
               </a>
               <div class="catalog__wrapper">
                 <h3 class="catalog___subtitle">
@@ -103,7 +103,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__img" href="#">
-                <img src="http://placehold.it/260x195" alt="item hear" width="260" height="195">
+                <img src="img/photo-toys-mobile@1x.jpg" alt="item hear" width="260" height="195">
               </a>
               <div class="catalog__wrapper">
                 <h3 class="catalog___subtitle">
@@ -129,53 +129,61 @@
           </ul>
         </section>
         <section class="video">
-          <h3 class="video___subtitle">
-            Процесс производства
-          </h3>
+          <div class="video__wrapper">
+            <h3 class="video___subtitle">
+              Процесс производства
+            </h3>
+          </div>
           <div class="video__img">
-            <img src="http://placehold.it/260x195" alt="item big basket" width="260" height="195">
+            <img src="img/video-mobile@1x.jpg" alt="item big basket" width="260" height="195">
             <button class="video__btn" type="button">
-              Включить видео
+              <span class="visually-hidden">
+                Включить видео
+              </span>
             </button>
           </div>
-          <p class="video__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a class="video__order-btn" href="#">
-            СДЕЛАТЬ ЗАКАЗ
-          </a>
+          <div class="video__wrapper">
+            <p class="video__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a class="video__order-btn" href="#">
+              СДЕЛАТЬ ЗАКАЗ
+            </a>
+          </div>
         </section>
       </main>
 
       <footer class="footer">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
-            </a>
-          </li>
-        </ul>
+        <div class="footer__wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="footer-develop">
           <p class="footer-develop__description">
             Разработано
+            <a class="footer-develop-logo" href="https://htmlacademy.ru/">
+              <img src="#" width="27" height="34" alt="HTML Academy">
+            </a>
           </p>
-          <a href="https://htmlacademy.ru/">
-            <img src="#" width="27" height="34" alt="HTML Academy">
-          </a>
         </div>
       </footer>
 
       <section class="modal">
-        <div class="madal__wrapper">
+        <div class="modal__wrapper">
           <h2 class="modal__title">
-            Добавить в корзину
+            ДОБАВИТЬ В КОРЗИНУ
           </h2>
           <p class="modal__description">
             Выберите размер:
@@ -194,7 +202,7 @@
               L
             </label>
             <button class="form-size__btn" type="submit" name="button">
-              Добавить
+              ДОБАВИТЬ
             </button>
           </form>
         </div>

@@ -12,7 +12,7 @@
     <div class="wrapper">
 
       <header class="header">
-        <a class="header__logo" href="index.html">
+        <a class="header__logo">
           <img class="header__logo-img" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35">
         </a>
         <nav class="header-nav">
@@ -28,7 +28,7 @@
               </a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link">
+              <a class="header-nav__link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
@@ -61,13 +61,13 @@
                   ТИП
                 </h3>
                 <div class="form__radio">
-                  <input class="form__radio-btn" type="radio" name="radion-btn" id="interior">
+                  <input class="form__radio-btn visually-hidden" type="radio" name="radion-btn" id="interior">
                   <label class="form__radio-label" for="interior">
                     Аксессуар для интерьера
                   </label>
                 </div>
                 <div class="form__radio">
-                  <input class="form__radio-btn" type="radio" name="radion-btn"  id="toy">
+                  <input class="form__radio-btn visually-hidden" type="radio" name="radion-btn"  id="toy">
                   <label class="form__radio-label" for="toy">
                     Детская игрушка
                   </label>
@@ -78,37 +78,37 @@
                   ЦВЕТ
                 </h3>
                 <div class="form__checkbox">
-                  <input class="form__checkbox-value" type="checkbox" name="white" id="white">
+                  <input class="form__checkbox-value visually-hidden" type="checkbox" name="white" id="white">
                   <label class="form__checkbox-label" for="white">
                     Белый
                   </label>
                 </div>
                 <div class="form__checkbox">
-                  <input class="form__checkbox-value" type="checkbox" name="grey" id="grey">
+                  <input class="form__checkbox-value visually-hidden" type="checkbox" name="grey" id="grey">
                   <label class="form__checkbox-label" for="grey">
                     Серый
                   </label>
                 </div>
                 <div class="form__checkbox">
-                  <input class="form__checkbox-value" type="checkbox" name="tiffani" id="tiffani">
+                  <input class="form__checkbox-value visually-hidden" type="checkbox" name="tiffani" id="tiffani">
                   <label class="form__checkbox-label" for="tiffani">
                     &#171;Тифанни&#187;
                   </label>
                 </div>
                 <div class="form__checkbox">
-                  <input class="form__checkbox-value" type="checkbox" name="black" id="black">
+                  <input class="form__checkbox-value visually-hidden" type="checkbox" name="black" id="black">
                   <label class="form__checkbox-label" for="black">
                     Чёрный
                   </label>
                 </div>
                 <div class="form__checkbox">
-                  <input class="form__checkbox-value" type="checkbox" name="pink" id="pink">
+                  <input class="form__checkbox-value visually-hidden" type="checkbox" name="pink" id="pink">
                   <label class="form__checkbox-label" for="pink">
                     Розовый
                   </label>
                 </div>
                 <div class="form__checkbox">
-                  <input class="form__checkbox-value" type="checkbox" name="orange" id="orange">
+                  <input class="form__checkbox-value visually-hidden" type="checkbox" name="orange" id="orange">
                   <label class="form__checkbox-label" for="orange">
                     Оранжевый
                   </label>
@@ -153,11 +153,11 @@
                 <h3 class="form__legend">
                   ДОП
                 </h3>
-                <textarea class="form__textarea" name="name" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу">
+                <textarea class="form__textarea" name="name" placeholder="Опишите все ваши пожелания к заказу">Опишите все ваши пожелания к заказу
                 </textarea>
               </li>
             </ul>
-            <p class="form__description">
+            <p class="form__description form__description--add">
               *Поля обязательны для заполнения
             </p>
             <input class="form__btn" type="submit" name="order" value="ОТПРАВИТЬ ЗАКАЗ">
@@ -166,27 +166,29 @@
       </main>
 
       <footer class="footer">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
-            </a>
-          </li>
-        </ul>
+        <div class="footer__wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="footer-develop">
           <p class="footer-develop__description">
             Разработано
+            <a class="footer-develop-logo" href="https://htmlacademy.ru/">
+              <img src="#" width="27" height="34" alt="HTML Academy">
+            </a>
           </p>
-          <a href="https://htmlacademy.ru/">
-            <img src="#" width="27" height="34" alt="HTML Academy">
-          </a>
         </div>
       </footer>
 
