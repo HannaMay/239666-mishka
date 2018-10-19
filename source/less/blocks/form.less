@@ -1,53 +1,54 @@
+.form{
+  padding: 0 30px;
+}
+
 .form__title{
-  margin: 0 30px;
   font-size: 27px;
   line-height: 30px;
-  padding: 65px 0;
-  margin: 0;
+  padding: 65px 30px;
   text-align: center;
   background-color: @light-gray-color;
 }
 
 .form__description{
-  margin: 30px;
+  padding: 30px;
   color: @text-gray-color;
   font-size: 13px;
   line-height: 24px;
-  max-width: 243px;
-}
 
-.form{
-  margin: 0 30px;
+  &--add{
+    font-size: 14px;
+    line-height: 16px;
+    color: @text-gray-color;
+    padding: 18px 0 31px;
+  }
 }
 
 .form__legend{
   font-size: 16px;
-  font-weight: 17px;
+  font-weight: bold;
   color: @mint-color;
 }
 
 .form__radio-label,
 .form__checkbox-label{
-  display: inline-block;
+  display: block;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-  max-width: 180px;
-  margin-bottom: 26px;
-  padding-left: 65px;
+  padding: 45px 45px 26px 65px;
 }
 
-.form__text{
-  margin-top: 25px;
+.form__item{
+  padding: 30px 0 0;
 }
 
 .form__text-label{
-  display: inline-block;
+  padding-top: 25px;
+  display: block;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-  max-width: 173px;
-  margin-bottom: 21px;
 }
 
 .form__text-inp,
@@ -56,7 +57,7 @@
   display: block;
   font-size: 17px;
   line-height: 18px;
-  padding: 17px 0;
+  padding: 21px 0 17px;
   color: @modal-border-color;
   border: none;
   border-bottom: 2px solid #000000;
@@ -66,19 +67,12 @@
 .form__textarea{
   font-family: "OpenSans";
   font-weight: 100;
-  max-width: 260px;
   min-width: 260px;
+  margin-top: 23px;
   border: 2px solid #000000;
   color: @modal-border-color;
   padding: 18px;
   min-height: 140px;
-}
-
-.form__description--add{
-  font-size: 14px;
-  line-height: 16px;
-  color: @text-gray-color;
-  margin: 18px 0 31px;
 }
 
 .form__btn{
