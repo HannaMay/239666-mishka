@@ -6,7 +6,8 @@
 @font-face {
   font-family: "OpenSans";
   font-weight: 700;
-  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+  src: url("../fonts/opensansbold.woff"),
+  url("../fonts/opensansbold.woff2");
 }
 
 *,
@@ -59,4 +60,26 @@ p {
 .wrapper {
   width: 320px;
   margin: 0 auto;
+}
+
+@media @tablet {
+  .wrapper {
+    width: @tablet-area;
+    margin: 0 auto;
+  }
+}
+
+@media @desktop {
+  .wrapper {
+    width: @desktop-area;
+    margin: 0 auto;
+  }
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
