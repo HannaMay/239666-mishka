@@ -1,16 +1,113 @@
 .about-us {
   padding: 30px;
+
+  @media @tablet {
+    padding: 57px 50px 80px;
+  }
+
+  @media @desktop {
+    padding: 68px 100px 90px;
+  }
 }
 
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+
+  @media @tablet {
+    padding-bottom: 46px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media @desktop {
+    padding-bottom: 43px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 175px;
+  }
+}
+
+.about-us__list {
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media @desktop {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.about-us__item {
+  &--ecology {
+    order: 1;
+  }
+
+  &--style {
+    order: 2;
+  }
+
+  &--photo {
+    order: 3;
+  }
+
+  &--love {
+    order: 4;
+  }
+
+  &--fatherland {
+    order: 5;
+  }
+
+  &--present {
+    order: 6;
+  }
+
+  @media @tablet {
+    max-width: 300px;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--photo {
+      order: 5;
+    }
+
+    &--love {
+      order: 2;
+    }
+
+    &--fatherland {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
 }
 
 .about-us__description {
   margin: 0;
   font-size: 17px;
   font-weight: bold;
-  padding: 57px 0 30px;
+  padding: 20px 0 30px;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media @desktop {
+    padding: 30px 0 30px;
+  }
 }

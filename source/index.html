@@ -27,35 +27,37 @@
 
             <ul class="header-nav__list">
               <li class="header-nav__item">
-                <a class="header-nav__link" href="catalog.html">
+                <a class="header-nav__link header-nav__link--catalog" href="catalog.html">
                   Каталог товаров
                 </a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="form.html">
+                <a class="header-nav__link header-nav__link--knitting" href="form.html">
                   Вязание на заказ
                 </a>
               </li>
               <li class="header-nav__item header-nav__item--sub-menu">
-                <a class="header-nav__link header-nav__link--sub-menu">
+                <a class="header-nav__link header-nav__link--new">
                   Новые поступления
                 </a>
               </li>
               <li class="header-nav__item header-nav__item--sub-menu">
-                <a class="header-nav__link header-nav__link--sub-menu">
+                <a class="header-nav__link header-nav__link--sale">
                   Распродажа
                 </a>
               </li>
             </ul>
 
             <ul class="header-nav__list header-nav__list--user">
-              <li class="header-nav__item">
+              <li class="header-nav__item header-nav__item--search">
                 <a class="header-nav__link header-nav__link--search" href="#">
-                  Поиск по сайту
+                  <span class="header-nav__label">
+                    Поиск по сайту
+                  </span>
                 </a>
               </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="#">
+              <li class="header-nav__item header-nav__item--basket">
+                <a class="header-nav__link header-nav__link--basket" href="#">
                   Корзина: пока пуста
                 </a>
               </li>
@@ -142,7 +144,6 @@
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x">
                 <img src="img/triple-set-mobile@1x.jpg" alt="product-week">
               </picture>
-              <!--<img src="img/triple-set-mobile@1x.jpg" alt="product-week">-->
             </div>
 
             <div class="product-week__product-detail">
@@ -162,45 +163,48 @@
             Коротко о нас:
           </h2>
           <ul class="about-us__list">
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item--ecology">
               <p class="about-us__description">
-                Экологически чистые материалы
+                Экологически чистые&nbsp;материалы
               </p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item--style">
               <p class="about-us__description">
-                Скандинавский стиль по российской цене
+                Скандинавский стиль по&nbsp;российской цене
               </p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item--photo">
               <p class="about-us__description">
-                Увеличивает лайки на фотографиях
+                Увеличивает лайки на&nbsp;фотографиях
               </p>
             </li>
-              <li class="about-us__item">
+            <li class="about-us__item about-us__item--love">
               <p class="about-us__description">
-                Связано вручную с любовь и умилением
+                Связано вручную с любовью&nbsp;и&nbsp;умилением
               </p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item--fatherland">
               <p class="about-us__description">
                 Поддержка отечественного производителя
               </p>
             </li>
-            <li class="about-us__item">
+            <li class="about-us__item about-us__item--present">
               <p class="about-us__description">
-                Постовляеться в подарочной упаковке
+                Постовляется в подарочной&nbsp;упаковке
               </p>
             </li>
           </ul>
         </section>
+
         <section class="reviews">
           <h2 class="reviews__title">
             Отзывы
           </h2>
           <article class="reviews__wrapper">
             <blockquote class="reviews__description">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
               <cite class="reviews__user-name">
                 Анастасия Красильникова
               </cite>
@@ -208,50 +212,59 @@
                 @misssssiskras
               </a>
             </blockquote>
+            <div class="reviews__nav">
+              <a class="reviews__arrow rewies__arrow--right" href="#">
+                <span class="visually-hidden">
+                  Next review
+                </span>
+              </a>
+              <a class="reviews__arrow rewies__arrow--left" href="#">
+                <span class="visually-hidden">
+                  Previous review
+                </span>
+              </a>
+            </div>
           </article>
-          <div class="reviews__nav">
-            <a class="reviews__arrow rewies__arrow--right" href="#">
-              <span class="visually-hidden">
-                Next review
-              </span>
-            </a>
-            <a class="reviews__arrow rewies__arrow--left" href="#">
-              <span class="visually-hidden">
-                Previous review
-              </span>
-            </a>
-          </div>
           <a class="reviews__btn" href="#" >
-            Написать
+            НАПИСАТЬ
           </a>
         </section>
+
         <section class="contacts">
-          <h2 class="contacts__title">
-            Контакты
-          </h2>
-          <table class="contacts__list">
-            <tr class="contacts__item">
-              <td class="contacts__name">
-                e&#8209;mail:
-              </td>
-              <td class="contacts__description">
-                <a href="mailto:info@mimimishkashop.ru">
-                  info@mimimishkashop.ru
-                </a>
-              </td>
-            </tr>
-            <tr class="contacts__item">
-              <td class="contacts__name">
-                адрес:
-              </td>
-              <td class="contacts__description">
-                г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8, офис&nbsp;101
-              </td>
-            </tr>
-          </table>
-          <div class="contacts__google-map"></div>
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">
+              Контакты
+            </h2>
+            <div class="contacts__list">
+              <div class="contacts__item">
+                <p class="contacts__name">
+                  e&#8209;mail:
+                </p>
+                <p class="contacts__description">
+                  <a  href="mailto:info@mimimishkashop.ru">
+                    info@mimimishkashop.ru
+                  </a>
+                </p>
+              </div>
+              <div class="contacts__item">
+                <p class="contacts__name">
+                  адрес:
+                </p>
+                <p class="contacts__description">
+                  г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8, офис&nbsp;101
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__google-map">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+              <img src="img/map-mobile@1x.jpg" alt="map">
+            </picture>
+          </div>
           <a class="contacts__btn" href="#">
-            Напишите нам
+            НАПИШИТЕ НАМ
           </a>
         </section>
 
@@ -259,6 +272,9 @@
 
       <footer class="footer">
         <div class="footer__wrapper">
+          <div class="footer__logo">
+            Mishka
+          </div>
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="https://www.instagram.com/htmlacademy">
@@ -273,14 +289,14 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="footer-develop">
-          <p class="footer-develop__description">
-            Разработано
-          </p>
-          <a class="footer-develop__logo" href="https://htmlacademy.ru/">
-            <img src="#" width="27" height="34" alt="HTML Academy">
-          </a>
+          <div class="footer-develop">
+            <p class="footer-develop__description">
+              Разработано
+            </p>
+            <a class="footer-develop__logo" href="https://htmlacademy.ru/">
+              <img src="#" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </footer>
 

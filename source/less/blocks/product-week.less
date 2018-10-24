@@ -1,33 +1,37 @@
 .product-week {
   padding: 33px 30px 0;
+  position: relative;
 
   @media @tablet {
     padding-bottom: 73px;
+    padding-left: 47px;
+  }
+
+  @media @desktop {
+    padding: 71px 100px 0;
   }
 }
 
 .product-week__titles {
-
   @media @tablet {
+    display: flex;
     padding-top: 41px;
     margin-bottom: 60px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media @desktop {
-    transform: translateY(115px);
-    margin-bottom: 50px;
+    position: absolute;
     padding-top: 0;
-    justify-content: flex-start;
+    top: 123px;
+    margin-bottom: 0;
   }
 }
 
 .product-week__main-title {
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
   margin: 0;
 
   @media @tablet {
@@ -55,10 +59,11 @@
     order: 2;
     width: 70px;
     line-height: 17px;
-    margin-right: 30px;
+    margin-right: 50px;
   }
 
   @media @desktop {
+    margin: 0 51px 0 48px;
     order: 1;
     line-height: 17px;
   }
@@ -77,52 +82,50 @@
     line-height: 30px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: -9px;
+  }
+
+  @media @desktop {
+    margin-top: 158px;
   }
 }
 
 //не смогла ничего придумать на флексах :(
 
 .product-week__wrapper {
-/*
-  @media @tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }*/
-
   @media @tablet {
     .clearfix;
-  }
-
-  @media @desktop {
-    //margin-bottom: 70px;
   }
 }
 
 .product-week__product-detail {
-
   @media @tablet {
     float: left;
-    //width: 50%;
+    width: 49%;
     clear: left;
   }
 
   @media @desktop {
-    //padding-left: 175px;
+    padding-left: 175px;
+    padding-top: 25px;
   }
 }
 
 .product-week__img {
+  height: 315px;
+  margin-bottom: 25px;
+  text-align: center;
 
   @media @tablet {
-    float: right;
+    display: flex;
     width: 334px;
-    height: 403px;
-    //background-color: @products-color;
+    margin-bottom: 0;
+    background-color: @products-color;
   }
 
   @media @desktop {
-
+    width: 525px;
+    margin-top: 0;
   }
 }
 
@@ -131,28 +134,28 @@
   padding-bottom: 28px;
 
   @media @tablet {
-    padding-top: 54px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 
   @media @desktop {
-    //margin-bottom: 70px;
+    padding-top: 40px;
   }
-
 }
 
 .product-week__row {
   display: flex;
   border-bottom: 1px solid @modal-size-color;
+  padding: 10px 0;
 
   @media @tablet {
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
   }
 
   @media @desktop {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -167,6 +170,7 @@
 }
 
 .product-week__price {
+  max-width: 290px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -174,6 +178,17 @@
   text-align: center;
   padding: 28px 0;
   margin: 0;
+
+  @media @tablet {
+    font-size: 20px;
+    padding-bottom: 34px;
+    margin-top: -50px;
+  }
+
+  @media @desktop {
+    font-size: 20px;
+    padding-top: 105px;
+  }
 }
 
 .product-week__order {
@@ -186,4 +201,13 @@
   min-width: 260px;
   padding: 20px 0;
   background-color: #ffffff;
+
+  @media @tablet {
+    min-width: 290px;
+    padding: 14px 0;
+  }
+
+  @media @desktop {
+    min-width: 291px;
+  }
 }

@@ -3,6 +3,10 @@
 }
 
 .footer__wrapper {
-  border-bottom: 2px solid @footer-diveder;
-  padding: 25px 0 27px 0;
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
 }

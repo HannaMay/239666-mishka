@@ -1,9 +1,13 @@
 .modal {
+  margin: 0 auto;
   border-top: 1px solid @modal-border-color;
   border-bottom: 1px solid @modal-border-color;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.5);
   padding: 36px 30px 46px;
   //display: none;
+  @media @tablet {
+    max-width: 566px;
+  }
 }
 
 .modal__wrapper {

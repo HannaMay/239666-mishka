@@ -1,13 +1,18 @@
 .header {
-  color: #000000;
   text-align: center;
   z-index: 2;
+
+  @media @tablet {
+    padding: 0 50px;
+  }
+
+  @media @desktop {
+    padding: 0 100px;
+  }
 }
 
-.header__wrapper{
-  width: 100%;
-
-  @media @tablet{
+.header__wrapper {
+  @media @tablet {
     display: flex;
     flex-wrap: wrap;
   }
@@ -18,8 +23,8 @@
   line-height: 24px;
   color: @text-gray-color;
 
-  @media @tablet{
-    margin-top: -25px;
+  @media @tablet {
+    margin-top: -23px;
     display: block;
     margin-left: auto;
   }

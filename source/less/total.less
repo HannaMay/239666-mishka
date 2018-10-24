@@ -6,8 +6,7 @@
 @font-face {
   font-family: "OpenSans";
   font-weight: 700;
-  src: url("../fonts/opensansbold.woff"),
-  url("../fonts/opensansbold.woff2");
+  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
 }
 
 *,
@@ -79,7 +78,7 @@ p {
 .clearfix() {
   &::after {
     content: "";
-    display: table;
+    display: block;
     clear: both;
   }
 }
