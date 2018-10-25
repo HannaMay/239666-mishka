@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid @footer-diveder;
+  padding: 25px 0 27px 0;
+
+  @media @tablet {
+    border: none;
+    padding: 0;
+  }
+}
+
+.social__item {
+  display: inline-block;
+
+  @media @tablet {
+    padding-right: 40px;
+  }
+}
+
+.social__link {
+  display: inline-block;
+  background: green;
+  min-width: 23px;
+  min-height: 30px;
+}

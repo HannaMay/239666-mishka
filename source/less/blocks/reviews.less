@@ -1,0 +1,128 @@
+.reviews {
+  padding: 0 30px 45px;
+
+  @media @tablet {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 top;
+  }
+
+  @media @desktop {
+    padding: 0 100px 100px;
+  }
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+
+  @media @tablet {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 85px 0 0 45px;
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.reviews__wrapper {
+  @media @tablet {
+    position: relative;
+    padding: 0 0 0 45px;
+  }
+}
+
+.reviews__description {
+  margin: 0;
+  color: @text-gray-color;
+  line-height: 30px;
+
+  @media @tablet {
+    font-size: 17px;
+  }
+}
+
+.reviews__text {
+  padding-top: 40px;
+
+  @media @tablet {
+    padding: 64px 0 68px;
+  }
+}
+
+.reviews__user-name {
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 40px;
+
+  @media @tablet {
+    padding-top: 0;
+    font-size: 18px;
+  }
+}
+
+.reviwes__user-e-mail {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 30px;
+  color: @text-gray-color;
+}
+
+.reviews__nav {
+  padding-top: 36px;
+  display: flex;
+  justify-content: center;
+
+  @media @tablet {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+}
+
+.reviews__arrow {
+  border: 1px solid @modal-size-color;
+  display: inline-block;
+  padding: 13px 38px 13px 42px;
+  background-color: pink;
+
+  @media @tablet {
+    border: none;
+  }
+}
+
+.reviews__btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: @text-gray-color;
+  border: 2px solid @text-gray-color;
+  width: 255px;
+  margin-top: 38px;
+  padding: 20px 0;
+  background-color: #ffffff;
+
+  @media @tablet {
+    max-width: 175px;
+    margin: 0;
+    position: absolute;
+    right: 50px;
+    top: 80px;
+  }
+
+  @media @desktop {
+    right: 100px;
+  }
+}
