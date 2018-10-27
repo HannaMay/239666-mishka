@@ -1,8 +1,30 @@
 .footer {
   background-color: @light-gray-color;
+
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+  }
 }
 
 .footer__wrapper {
-  border-bottom: 2px solid @footer-diveder;
-  padding: 25px 0 27px 0;
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media @tablet {
+    display: block;
+    width: 86px;
+    height: 35px;
+    background-color: yellow;
+  }
 }

@@ -1,6 +1,10 @@
 .footer-develop {
   display: flex;
   justify-content: center;
+
+  @media @tablet {
+    justify-content: space-between;
+  }
 }
 
 .footer-develop__description {
@@ -8,6 +12,10 @@
   line-height: 18px;
   font-weight: bold;
   padding: 30px 0;
+
+  @media @tablet {
+    padding: 0;
+  }
 }
 
 .footer-develop__logo {

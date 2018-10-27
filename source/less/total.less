@@ -60,3 +60,26 @@ p {
   width: 320px;
   margin: 0 auto;
 }
+
+@media @tablet {
+  .wrapper {
+    width: @tablet-area;
+    margin: 0 auto;
+  }
+}
+
+@media @desktop {
+  .wrapper {
+    width: @desktop-area;
+    margin: 0 auto;
+  }
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
