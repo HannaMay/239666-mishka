@@ -23,10 +23,12 @@
 }
 
 .video__wrapper {
+  padding: 26px 34px 34px 33px
   border: 1px solid @border-gray-color;
 
   @media @tablet {
-    padding-top: 104px;
+    border-top: 0;
+    padding: 0 43px 16px;
   }
 
   @media @desktop {
@@ -34,60 +36,63 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 370px;
-    padding: 180px 59px 60px 80px;
+    border: 1px solid @border-gray-color;
+    padding: 176px 59px 57px 77px;
   }
 }
 
 .video__subtitle {
+  position: relative;
   font-size: 17px;
   line-height: 24px;
-  padding: 30px 42px 26px 90px;
+  padding: 25px 0 23px 90px;
   border: 1px solid @border-gray-color;
 
   @media @tablet {
     font-size: 20px;
-    border: none;
-    position: absolute;
-    bottom: 183px;
-    padding-left: 106px;
+    border-bottom:  none;
   }
 
   @media @desktop {
+    border: none;
     max-width: 150px;
-    top: 66px;
-    right: 345px;
+    padding: 0;
+    position: absolute;
+    top: 96px;
+    right: 140px;
   }
 }
 
 .video__img {
   position: relative;
+  order: -1;
 }
 
 .video__btn {
   display: block;
   min-width: 101px;
   min-height: 77px;
-  background: pink;
+  background: transparent;
   position: absolute;
-  top: 30%;
-  right: 30%;
+  top: 24%;
+  right: 29%;
   border: none;
 
   @media @tablet {
-    top: 40%;
-    right: 40%;
+    top: 42%;
+    right: 42%;
   }
 }
 
 .video__description {
   font-size: 13px;
   line-height: 24px;
-  padding: 34px 44px 0 34px;
+  margin: 0 0 25px 0;
 
   @media @tablet {
     font-size: 15px;
     line-height: 30px;
-    padding: 0 43px 0 43px;
+    padding: 0 0px 0 6px;
   }
 
   @media @desktop {
@@ -101,19 +106,34 @@
   display: block;
   color: #000000;
   font-weight: bold;
-  margin: 29px 34px 33px;
-  padding: 20px 23px 16px;
+  text-align: center;
+  padding: 17px 10px 15px;
   border: 2px solid @text-gray-color;
 
   @media @tablet {
-    margin-left: 43px;
-    margin-right: 43px;
     padding: 20px 0 16px;
+    margin: 30px 0 15px;
     text-align: center;
   }
 
   @media @desktop {
     margin: 0;
     padding: 17px 42px;
+  }
+}
+
+.video__icon-camera{
+  position: absolute;
+  top: 30px;
+  left: 32px;
+
+  @media @tablet {
+
+  }
+
+  @media @desktop {
+    position: absolute;
+    top: -54px;
+    right: 117px;
   }
 }

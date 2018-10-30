@@ -1,26 +1,24 @@
 .social {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: 2px solid @footer-diveder;
-  padding: 25px 0 27px 0;
+  padding: 24px 0 23px 0;
 
   @media @tablet {
     border: none;
     padding: 0;
+    min-width: 140px;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 
 .social__item {
+  padding: 0 23px 0 17px;
   display: inline-block;
-
-  @media @tablet {
-    padding-right: 40px;
-  }
 }
 
 .social__link {
   display: inline-block;
-  background: green;
-  min-width: 23px;
-  min-height: 30px;
 }
