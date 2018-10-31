@@ -14,12 +14,6 @@
 .sub-nav__item {
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-  }
-
   &--interer {
     background-color: @mint-color;
   }
@@ -30,6 +24,26 @@
 
   @media @tablet {
     width: 50%;
+
+    &--interer:hover {
+      background-color: @products-hover-left;
+
+      &:hover svg {
+        fill: @icon-products-hover;
+      }
+    }
+
+    &--toys:hover {
+      background-color: @products-hover-right;
+
+      &:hover svg {
+        fill: @icon-products-hover-left;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   @media @desktop {
@@ -52,8 +66,18 @@
   @media @tablet {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 36px;
-    padding-bottom: 34px;
+    padding-top: 28px;
+    padding-bottom: 27px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    &:active {
+      color: rgba(250, 250, 250, 0.3);
+    }
+
+    &:active .sub-nav__icon {
+      opacity: 0.3;
+    }
   }
 
   @media @desktop {

@@ -11,6 +11,11 @@
     min-width: 140px;
     align-items: baseline;
     justify-content: space-between;
+    padding-left: 84px;
+  }
+
+  @media @desktop {
+    padding-left: 0;
   }
 }
 
@@ -21,4 +26,19 @@
 
 .social__link {
   display: inline-block;
+}
+
+
+.social__link-icon {
+  fill: #231F20;
+
+  @media @tablet{
+    &:hover {
+      fill: @products-hover-right;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

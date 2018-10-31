@@ -71,8 +71,6 @@
       margin-right: 0;
     }
   }
-
-
 }
 
 .catalog__wrapper {
@@ -90,6 +88,15 @@
     border-top: 1px solid @border-gray-color;
     padding-top: 25px;
     justify-content: space-between;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 1, 1, 0.5);
+    }
+
+    //ну этот кусочек бесполезен т.к.div это не a
+    &:focus {
+      box-shadow: 0 3px 5px rgba(0, 1, 1, 0.5);
+    }
   }
 
   @media @desktop {

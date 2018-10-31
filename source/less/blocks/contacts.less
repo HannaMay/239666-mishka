@@ -3,7 +3,7 @@
   position: relative;
 
   @media @tablet {
-    padding: 69px 50px 0;
+    padding: 76px 50px 0 45px;
   }
 
   @media @desktop {
@@ -14,9 +14,9 @@
 }
 
 .contacts__wrapper {
-    @media @desktop {
-      padding-left: 168px;
-    }
+  @media @desktop {
+    padding-left: 168px;
+  }
 }
 
 .contacts__title {
@@ -26,26 +26,33 @@
   position: relative;
 
   @media @tablet {
-    font-size: 43px;
-    line-height: 50px;
-
     &::after {
       content: "";
-      width: 100%;
+      width: 47px;
       position: absolute;
       background-image: url(../img/icon-flag.svg);
       background-repeat: no-repeat;
       display: block;
       height: 82px;
-      left: -105px;
-      top: 62px;
+      right: 3px;
+      top: -15px;
     }
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media @desktop {
     font-size: 53px;
     line-height: 57px;
     padding-top: 70px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      left: -105px;
+      top: 62px;
+    }
   }
 }
 
@@ -55,7 +62,7 @@
   @media @tablet {
     display: flex;
     justify-content: flex-start;
-    padding: 49px 0px 24px 0px;
+    padding: 49px 0px 26px 5px;
   }
 
   @media @desktop {
@@ -70,11 +77,16 @@
 
   @media @tablet {
     max-width: 315px;
-    margin-right: 40px;
+    margin-right: 47px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   @media @desktop {
     padding-bottom: 30px;
+    margin-right: 40px;
   }
 }
 
@@ -135,9 +147,22 @@
   border: 2px solid @text-gray-color;
   background-color: #ffffff;
 
+  &:active {
+    outline: none;
+    border: none;
+    background-color: @text-gray-color;
+    color: rgba(255,255,255,0.3);
+  }
+
   @media @tablet {
     max-width: 230px;
     margin: 55px auto 57px;
+
+    &:hover {
+      border: none;
+      background-color: @text-gray-color;
+      color: #ffffff;
+    }
   }
 
   @media @desktop {

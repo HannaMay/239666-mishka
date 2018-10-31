@@ -2,11 +2,11 @@
   padding: 32px 30px 19px;
 
   @media @tablet {
-    padding: 57px 50px 80px;
+    padding: 55px 84px 25px 50px;
   }
 
   @media @desktop {
-    padding: 77px 100px 40px;
+    padding: 77px 100px 32px;
   }
 }
 
@@ -16,13 +16,13 @@
   font-weight: bold;
 
   @media @tablet {
-    padding-bottom: 46px;
+    margin-left: -6px;
+    padding-bottom: 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media @desktop {
-    padding-bottom: 43px;
     font-size: 53px;
     line-height: 57px;
     margin-left: 119px;
@@ -36,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 50px;
   }
 
   @media @desktop {
@@ -73,6 +74,7 @@
 
   @media @tablet {
     max-width: 300px;
+    padding: 34px 0 27px;
 
     &--ecology {
       order: 1;
@@ -112,10 +114,6 @@
     line-height: 22px;
   }
 
-  @media @desktop {
-    padding: 60px 0 51px;
-  }
-
   &--icon-ecology,
   &--icon-style,
   &--icon-photo,
@@ -127,7 +125,7 @@
     left: 7px;
 
     @media @desktop{
-      top: 6px;
+      top: -36px;
       left: 9px;
     }
   }
@@ -142,39 +140,21 @@
 
   &--icon-photo {
     top: -29px;
-
-    @media @desktop{
-      top: 12px;
-    }
   }
 
   &--icon-love {
     top: -32px;
     left: 3px;
-
-    @media @desktop{
-      top: 9px;
-      left: 4px;
-    }
   }
 
   &--icon-fatherland {
     top: -31px;
     left: -6px;
 
-    @media @desktop{
-      top: 9px;
-      left: -6px;
-    }
   }
 
   &--icon-present {
     top: -33px;
     left: 3px;
-
-    @media @desktop{
-      top: 8px;
-      left: 3px;
-    }
   }
 }

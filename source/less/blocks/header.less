@@ -7,8 +7,12 @@
   position: relative;
 
   @media @tablet {
+    padding: 0 49px;
     display: flex;
     flex-wrap: wrap;
+  }
+  @media @desktop {
+    padding: 0;
   }
 }
 
@@ -19,9 +23,13 @@
 
   @media @tablet {
     margin-top: -24px;
-    margin-right: 52px;
+    margin-right: 0;
     display: block;
     margin-left: auto;
     z-index: 2;
+  }
+
+  @media @desktop {
+    margin-right: 52px;
   }
 }
