@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    align-items: baseline;
+  }
+
+  @media @desktop {
     align-items: center;
   }
 }
@@ -16,15 +20,34 @@
     align-items: center;
     padding: 0 50px;
   }
+
+  @media @desktop {
+    padding: 0 0 0 77px;
+  }
 }
 
 .footer__logo {
   display: none;
 
   @media @tablet {
+    display: flex;
+    font-size: 0;
+
+    a {
+      &:hover {
+        fill: rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        fill: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+.footer__mishka {
+  @media @tablet {
     display: block;
-    width: 86px;
-    height: 35px;
-    background-color: yellow;
+    fill: #000000;
   }
 }

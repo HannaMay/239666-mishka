@@ -9,6 +9,16 @@
   line-height: 16px;
   padding: 20px 0;
   min-width: 78px;
+
+  @media @tablet {
+    &:hover {
+      border-color: @modal-border-color;
+    }
+
+    &:checked {
+      border-color: @icon-play-color;
+    }
+  }
 }
 
 .form-size__btn {

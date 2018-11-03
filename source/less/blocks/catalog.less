@@ -1,7 +1,7 @@
 .catalog__title {
   font-size: 27px;
   line-height: 30px;
-  padding: 65px 0;
+  padding: 72px 0 75px;
   text-align: center;
   background-color: @light-gray-color;
 
@@ -10,13 +10,27 @@
     line-height: 50px;
     padding-top: 105px;
     padding-bottom: 65px;
+    border-top: 1px solid @border-main;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 30px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1150' height='34' viewBox='0 0 1150 34'%3E%3Cpath fill='%23FFF' d='M1121.252 0c-14.375 0-14.375 14-28.75 14s-14.373-14-28.747-14-14.374 14-28.748 14c-14.375 0-14.375-14-28.75-14-14.374 0-14.374 14-28.748 14S963.134 0 948.76 0s-14.373 14-28.748 14-14.375-14-28.75-14-14.373 14-28.748 14-14.375-14-28.75-14c-14.37 0-14.37 14-28.743 14-14.374 0-14.374-14-28.75-14-14.37 0-14.37 14-28.743 14-14.374 0-14.374-14-28.747-14s-14.373 14-28.747 14C675.66 14 675.66 0 661.287 0c-14.374 0-14.374 14-28.748 14-14.376 0-14.376-14-28.752-14-14.374 0-14.374 14-28.748 14S560.666 0 546.292 0s-14.374 14-28.748 14S503.17 0 488.796 0c-14.375 0-14.375 14-28.75 14-14.376 0-14.376-14-28.753-14-14.375 0-14.375 14-28.75 14s-14.375-14-28.75-14c-14.376 0-14.376 14-28.75 14S330.665 0 316.29 0s-14.374 14-28.75 14-14.376-14-28.753-14c-14.374 0-14.374 14-28.747 14-14.375 0-14.375-14-28.75-14s-14.375 14-28.75 14C158.16 14 158.16 0 143.784 0c-14.377 0-14.377 14-28.755 14-14.378 0-14.378-14-28.756-14S71.896 14 57.518 14c-14.38 0-14.38-14-28.76-14S14.38 14 0 14v20h1150V14c-14.374 0-14.374-14-28.748-14z'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+    }
   }
 
   @media @desktop {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 103px;
-    padding-bottom: 81px;
+    padding: 92px 0 106px;
   }
 }
 
@@ -24,20 +38,19 @@
   padding: 30px 30px 0;
 
   @media @tablet {
-    padding: 79px 50px 0;
+    padding: 79px 100px 0;
   }
 
   @media @desktop {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 111px 50px 0;
+    padding: 127px 50px 0;
   }
 }
 
 .catalog__item {
   margin-bottom: 30px;
-  
+
   @media @tablet {
     display: flex;
     margin-bottom: 54px;
@@ -46,8 +59,17 @@
   @media @desktop {
     justify-content: flex-start;
     flex-direction: column;
+    margin-right: 51px;
     max-width: 315px;
-    margin-bottom: 57px;
+    margin-bottom: 58px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -56,7 +78,7 @@
   border-bottom: 1px solid @border-gray-color;
   border-left: 1px solid @border-gray-color;
   border-right: 1px solid @border-gray-color;
-  padding: 30px 28px;
+  padding: 28px 28px 25px;
 
   @media @tablet {
     display: flex;
@@ -66,6 +88,15 @@
     border-top: 1px solid @border-gray-color;
     padding-top: 25px;
     justify-content: space-between;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 1, 1, 0.5);
+    }
+
+    //ну этот кусочек бесполезен т.к.div это не a
+    &:focus {
+      box-shadow: 0 3px 5px rgba(0, 1, 1, 0.5);
+    }
   }
 
   @media @desktop {
@@ -73,6 +104,7 @@
     min-height: 195px;
     border-left: 1px solid @border-gray-color;
     border-top: none;
+    padding: 26px 25px;
   }
 }
 
@@ -100,7 +132,7 @@
 .catalog__description {
   font-size: 13px;
   line-height: 30px;
-  padding: 18px 0 28px;
+  padding: 3px 0 20px;
 
 
   @media @tablet {
@@ -109,23 +141,30 @@
   }
 
   @media @desktop {
-    padding: 15px 0 0;
+    padding: 6px 0 0;
   }
 }
 
 .catalog__cost {
-  padding: 27px 0 0;
-  
+  padding: 23px 0 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid @border-gray-color;
+
+  @media @tablet {
+    border-top: none;
+  }
+
   @media @desktop {
     padding-top: 0;
-    margin-top: 19px;
+    margin-top: 14px;
     border-top: 1px solid @border-gray-color;
-    //padding-bottom: 29px;
+    align-items: flex-end;
   }
 }
 
 .catalog__price {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: bold;
   display: inline-block;
@@ -135,14 +174,29 @@
   }
 
   @media @desktop {
-    padding-top: 19px;
-    //padding-bottom: 29px;
+    padding-top: 20px;
+    font-size: 17px;
   }
 }
 
 .catalog__add-to-cart {
-  background-color: pink;
   display: inline-block;
-  min-width: 19px;
-  min-height: 19px;
+  margin-right: -7px;
+}
+
+.catalog__link-icon-basket {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  fill: @basket-color;
+
+  @media @desktop {
+    &:hover {
+      fill: @icon-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

@@ -1,20 +1,19 @@
 .header {
   text-align: center;
   z-index: 2;
-
-  @media @tablet {
-    padding: 0 50px;
-  }
-
-  @media @desktop {
-    padding: 0 100px;
-  }
 }
 
 .header__wrapper {
+  position: relative;
+
   @media @tablet {
+    padding: 0 49px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media @desktop {
+    padding: 0;
   }
 }
 
@@ -24,8 +23,14 @@
   color: @text-gray-color;
 
   @media @tablet {
-    margin-top: -23px;
+    margin-top: -24px;
+    margin-right: 0;
     display: block;
     margin-left: auto;
+    z-index: 2;
+  }
+
+  @media @desktop {
+    margin-right: 52px;
   }
 }
